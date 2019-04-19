@@ -5,113 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         #main {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: #8C1B39;
+            background-color: #454545;
+            color: white;
         }
         #form {
-            background-color: #F2F2F2;
-            color: #8C1B39;
+            background-color: red;
             padding: 1em;
-            border-radius: 5px;
-            width: 50%;
         }
         #header {
             text-align: center;
-            color: whitesmoke;
         }
         #header p {
+            color: whitesmoke;
             font-size: 0.8em;
         }
         #form-element {
             display: flex;
             flex-direction: row;
-            align-content: space-around;
-            padding: 0.5em;
+            margin: 0.5em;
         }
         #labels {
-            display: inline-block;
-            vertical-align: middle;
-            width: 50%;
-            padding-top: 0.4em;
-            padding-right: 2em;
-            margin-bottom: 0.5em;
-            margin-top: 0.5em;
-        }
-        #labels label {
-            display: flex;
             float: right;
-            text-align: right;
-            padding-right: 0.3em;
+            width: 50%;
         }
         #inputs {
-            padding-left: 2em;
+            display: flex;
             float: left;
             width: 50%;
-            margin-bottom: 0.5em;
-            margin-top: 0.5em;
-            color: #8C1B39;
         }
-        ::placeholder {
-            color: #8C1B39;            
-        }        
         #inputs ul {
-            float: left;
             display: flex;
             flex-direction: column;
-            align-content: stretch;
-            list-style:none;
-            margin-block-end: 0%;
-            margin-block-start: 0%;
-            padding-inline-start: 0%;
+            justify-content: left;
         }
         #textarea {
             height: 5em;
         }
-        .input-field {
-            height: 2em;            
-            width: 90%;
-            border: 1px solid #D9A796;
-            padding: 0.1em;
-            padding-inline-start: 0.2em;            
-            font-family: 'Roboto', sans-serif;
-            border-radius: 0.2em;
-        }
-        #dropdown {
-            height: 2em;            
-            border-radius: 0.2em;
-            border: 1px solid #D9A796;
-            color: #8C1B39;
-        }
-        #submit-button {
-            width: 100%;
-           text-align: center;
-        }
-        .btn {
-            background-color: #F2F2F2;
-            color: #8C1B39;
-            border: 1px solid #8C1B39;
-            border-radius: 5px;
-            width: 100px;
-            height: 40px;
-            text-align: center;
-        }
-        .btn:hover {
-            background-color: #8C1B39;
-            border: 1px solid #8C1B39;
-            color: #F2F2F2;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>    
+    </style>
 </head>
 <body>
     <div id="main">
@@ -126,7 +65,7 @@
                         <label for="name" id="name-label">Name:</label>
                     </div>
                     <div id="inputs">
-                        <input class="input-field" type="text" id="name" placeholder="Name" required>
+                        <input type="text" id="name" placeholder="Name" required>
                     </div>
                 </div>
                 <div id="form-element">
@@ -134,7 +73,7 @@
                         <label for="email" id="email-label">Email:</label>
                     </div>
                     <div id="inputs">
-                        <input class="input-field" type="email" id="email" placeholder="Email" required>
+                        <input type="email" id="email" placeholder="Email" required>
                     </div>
                 </div>
                 <div id="form-element">
@@ -142,16 +81,16 @@
                         <label for="number" id="number-label">Age:</label>
                     </div>
                     <div id="inputs">
-                        <input class="input-field" type="number" id="number" min="1" max="99" placeholder="Age" required>
+                        <input type="number" id="number" min="1" max="99" placeholder="Age" required>
                     </div>
                 </div>
                 <div id="form-element">
                     <div id="labels">
-                        <label for="dropdown-list" id="dropdown-label">Lorem ipsum dolor sit amet:</label>
+                        <label for="dropdown-list">Lorem ipsum dolor sit amet:</label>
                     </div>
                     <div id="inputs">
                         <select name="dropdown-list" id="dropdown">
-                            <option  value disabled selected>Select from options</option>
+                            <option value="Lorem">Lorem</option>
                             <option value="Ipsum">Ipsum</option>
                             <option value="Dolor">Dolor</option>
                             <option value="Sit">Sit</option>
@@ -161,10 +100,10 @@
                 </div>
                 <div id="form-element">
                     <div id="labels">
-                        <label for="radio-list" id="radio-list-label">What is your favourite web design language?</label>
+                        <label for="radio-list">What is your favourite web design language?</label>
                     </div>
                     <div id="inputs">
-                        <ul>
+                        <ul style="list-style:none;">
                             <li><label><input type="radio" name="radio-buttons" value="1">HTML5</label></li>
                             <li><label><input type="radio" name="radio-buttons" value="2">CSS3</label></li>
                             <li><label><input type="radio" name="radio-buttons" value="3">JavaScript</label></li>
@@ -173,10 +112,10 @@
                 </div>
                 <div id="form-element">
                     <div id="labels">
-                        <label for="checkbox-list" id="checkbox-list-label">Select your favourite JS framework</label>
+                        <label for="checkbox-list">Select your favourite JS framework</label>
                     </div>
                     <div id="inputs">
-                        <ul>
+                        <ul style="list-style:none;">
                             <li><label><input type="checkbox" value="1" name="cbx1" value="1">Angular</label></li>
                             <li><label><input type="checkbox" value="2" name="cbx2" value="2">React</label></li>
                             <li><label><input type="checkbox" value="3" name="cbx3" value="3">VueJS</label></li>
@@ -188,18 +127,14 @@
                         <label for="textarea">Additional comment:</label>
                     </div>
                     <div id="inputs">
-                        <textarea class="input-field" name="textarea" id="textarea" cols="30" rows="5" placeholder="Your kind comments"></textarea>
+                        <textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="Your kind comments"></textarea>
                     </div>
-                </div>                
-                <div id="submit-button">
-                    <button class="btn" id="submit">SUBMIT</button>
-                </div>                
+                </div>
+                <div id="form-element">
+                    <button id="submit">SUBMIT</button>
+                </div>
             </form>
         </div>
     </div>
-    <script>
-            var screenHeight = window.innerHeight
-            document.getElementById('main').style.height = screenHeight*0.95+"px";
-    </script>    
 </body>
 </html>
