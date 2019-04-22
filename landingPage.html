@@ -2,52 +2,189 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Landing Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0px;
+        }
+        section {
+            margin-bottom: 2em;
+        }
+        #header {
+            display: inline-block;    
+            width: 100%;  
+            position: fixed;
+            top: 0;
+            min-height: 5em;
+            padding: 0px 20px;    
+            background-color: white;  
+        }
+        #header + #main {
+            padding-top: 5em;
+        }
+        #header-img {
+            float: left;
+            margin-right: auto;
+            height: 70px;
+            width: 65px;
+        }
+        .nav-link {
+            float: right;
+            padding-top: 1em;          
+            margin-left: auto;
+            font-size: 1.5em;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #002138;            
+            margin-right: 5%;            
+        }
+        #main {
+            margin-top: 5em;
+            background-color: #002138;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        @media screen and (min-width: 1279px){
+            #video {            
+                width: 1120px;
+                height: 630px;
+            }
+        }
+        #about, #announcements {
+            text-align: center;
+            width: 70%;
+        }
+        #announcement-cards {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;            
+        }
+        h1 {
+            font-size: 2em;
+        }
+        .card {
+            width: 25%;
+            margin: 1em;
+            padding: 1em;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .card-header {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding-bottom: 1em;
+        }
+        .card-text {
+            text-align: justify;
+        }
+        .about-text {
+           text-align: justify;
+        }
+        #contact {
+            text-align: center;
+            width: 70%;
+        }
+        #email {
+            width: 30%;
+            height: 30px;
+        }
+        #email::placeholder {
+            color: #002138;
+        }
+        @keyframes  button-hover {
+            0% {
+                background-color: #002138;
+                color: white;
+            }
+            100% {
+                background-color: white;
+                color: #002138;
+            }
+        }
+        #submit {
+            width: 70px;
+            height: 36px;
+            background-color: #002138;
+            color: white;
+            border: 1px solid white;
+        }
+        #submit:hover {
+            animation-name: button-hover;
+            animation-duration: 200ms;
+            animation-fill-mode: forwards;
+            cursor: pointer;
+        }
+        #footer {
+            background-color: white;
+            color: #002138;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <header id="header">
-        <img id="header-img" src="https://bit.ly/2UMDlwl">
+    <header id="header">        
         <nav id="nav-bar">
+            <a href="#home"><img id="header-img" src="https://www.iaeste.pl/images/template/iaeste-logo-round.png" alt="IAESTE-logo"></a>
             <a href="#announcements" class="nav-link">Announcements</a>
             <a href="#about" class="nav-link">About Us</a>
             <a href="#contact" class="nav-link">Contact</a>
-
         </nav>
     </header>
-    <main>
+    <div id="main">
         <section id="commercial">
             <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/R-291_bJJlM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
         <section id="announcements">
-            <div class="header">
+            <div class="head">
                 <h1>Announcements</h1>
             </div>
             <div id="announcement-cards">
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
+                <div class="card">
+                    <div class="card-header">New Title</div>
+                    <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eum minus, assumenda nesciunt cupiditate obcaecati in corporis nemo quo perferendis provident ab distinctio commodi voluptas nisi ex dolores vero! Fuga.</div>
+                </div>
+                <div class="card">
+                    <div class="card-header">New Title</div>
+                    <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eum minus, assumenda nesciunt cupiditate obcaecati in corporis nemo quo perferendis provident ab distinctio commodi voluptas nisi ex dolores vero! Fuga.</div>
+                </div>
+                <div class="card">
+                    <div class="card-header">New Title</div>
+                    <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eum minus, assumenda nesciunt cupiditate obcaecati in corporis nemo quo perferendis provident ab distinctio commodi voluptas nisi ex dolores vero! Fuga.</div>
+                </div>
+                <div class="card">
+                    <div class="card-header">New Title</div>
+                    <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eum minus, assumenda nesciunt cupiditate obcaecati in corporis nemo quo perferendis provident ab distinctio commodi voluptas nisi ex dolores vero! Fuga.</div>
+                </div>
+                <div class="card">
+                    <div class="card-header">New Title</div>
+                    <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eum minus, assumenda nesciunt cupiditate obcaecati in corporis nemo quo perferendis provident ab distinctio commodi voluptas nisi ex dolores vero! Fuga.</div>
+                </div>
+                <div class="card">
+                    <div class="card-header">New Title</div>
+                    <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eum minus, assumenda nesciunt cupiditate obcaecati in corporis nemo quo perferendis provident ab distinctio commodi voluptas nisi ex dolores vero! Fuga.</div>
+                </div>
             </div>
         </section>
         <section id="about">
-            <div class="header">
+            <div class="container">
                 <h1>About Us</h1>
-            </div>
-            <div id="info">
-
+                <p class="about-text">Since 1948 IAESTE has been providing young science and engineering students from around the world with paid, course related work experience. Similarly, IAESTE has been a source of high quality trainees for companies and institutions in more than 80 countries worldwide. </p>
+                <p class="about-text">In IAESTE we are committed to fostering international understanding and impacting on the development of young people through international exchange. Our core values of friendship, trust, respect, professionalism, development and intercultural cooperation serve as a foundation for our strong organisational culture and as the principles that guide all our work and daily activities.</p>
             </div>
         </section>
         <section id="contact">
-            <form action="post" id="form">
-                <input type="email" name="mail" id="email" placeholder="For more information enter your email">
-                <button id="submit">SUBMIT</button>
+            <h1>Contact Us</h1>
+            <form action="post" id="form" action="https://www.freecodecamp.com/email-submit">
+                <input type="email" name="email" id="email" placeholder="For more information enter your email">
+                <input id="submit" type="submit" value="SUBMIT" class="btn"></input>
             </form>
-        </section>
-        
-    </main>
+        </section>  
+        <footer id="footer">Copyright</footer>      
+    </div>
 </body>
 </html>
