@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            padding: 10px 0 0 10px;
+            margin: 0%;
+        }
+        @media only screen and (min-width: 768px) {
+            body {
+                display: flex;
+                flex-direction: row;            
+                float: left;
+            }
+            #navbar {
+                flex-direction: column;
+                width: 30%;
+            }
+        }
+        @media only screen and (max-width: 767px) {
+            
+            #navbar {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+            }
+            .link-container {              
+                width: 100%;
+            }
+        }
+        
+        .nav-link {
+            text-decoration: none;
+            color: black;
+        }
+        .nav-link:visited {
+            color: black;
+        }
+        .link-container {
+            font-size: 2em;            
+            font-weight: bold;       
+            border-bottom: 1px solid black;
+        }
+        .link-container:hover {
+            font-weight: bolder;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+        #main-doc {
+            padding-left: 10px;
+            border-left: 1px solid black;
+        }
+        .main-section header {
+            font-size: 2em;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .main-section {            
+            padding-bottom: 20px;
+        }
+        #code-container {
+            background-color: rgba(45, 45, 45, 0.3);            
+            padding: 10px;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <header id="nav-header">Zero to Hero!</header>
+        <div class="link-container"><a href="#zero" class="nav-link">zero</a></div>
+        <div class="link-container"><a href="#one" class="nav-link">one</a></div>
+        <div class="link-container"><a href="#two" class="nav-link">two</a></div>
+        <div class="link-container"><a href="#three" class="nav-link">three</a></div>
+        <div class="link-container"><a href="#four" class="nav-link">four</a></div>
+    </nav>
+    <main id="main-doc">
+        <section id="zero" class="main-section">
+            <header>zero</header>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit mollitia ipsa reiciendis autem accusantium ipsam, tenetur vitae perferendis praesentium vero quae aut! Reprehenderit, voluptatum. Quidem omnis adipisci praesentium quaerat fugit!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque quis hic numquam est et ipsam iste illo commodi consectetur non aliquam porro cum ab temporibus voluptatum voluptatem, enim autem exercitationem!</p>
+                <div id="code-container"><code>Lorem ipsum dolor sit amet consectetur adipisicing elit.</code></div>
+            </article>
+        </section>
+        <section id="one" class="main-section">
+            <header>one</header>
+            <article>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dignissimos vero odit provident, debitis modi ipsam. Necessitatibus molestias neque eaque nulla modi ullam, iure blanditiis tempora quae quia porro est.Neque ducimus rem, accusantium autem architecto nulla illo mollitia repudiandae temporibus harum illum omnis quisquam facere deserunt dolor ipsum suscipit fuga exercitationem aliquid labore ullam debitis? Temporibus velit pariatur tempora.</p>
+                    <div id="code-container"><code>Lorem ipsum dolor sit amet consectetur adipisicing elit.</code></div>                    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ullam beatae, neque, qui hic cum repellat eligendi minus fuga ipsam et illo provident labore voluptatum atque deleniti illum cumque nisi?
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        </ul>
+                    </p>
+                </article>
+        </section>
+        <section id="two" class="main-section">
+            <header>two</header>
+            <article>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus aliquam explicabo corporis repellat? Minima, necessitatibus aperiam adipisci, eveniet vero ad cum placeat facere, at quibusdam a eius similique praesentium culpa.
+                    Expedita fugiat eveniet pariatur veritatis. Tenetur earum delectus aliquid commodi animi cum, iste beatae necessitatibus dolores quis incidunt? Maiores voluptatem voluptas molestiae distinctio et accusantium provident dolorum totam natus non.
+                    Aperiam aut assumenda odio dicta sed excepturi ipsam eum in atque laborum, molestias voluptatem nobis necessitatibus reprehenderit officia accusamus maxime reiciendis obcaecati perferendis temporibus eveniet placeat accusantium earum aliquam. Distinctio?</p>
+                    <div id="code-container"><code>Lorem ipsum dolor sit amet consectetur adipisicing elit.</code></div>          
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ullam provident non ut ratione quos quibusdam ipsum! Iste, autem. Aut, quia! Quas quisquam numquam optio ducimus dicta ut earum repellendus?Quasi expedita, magnam voluptas, possimus molestias est tempore non, fugiat ab rem perferendis. Corporis officiis hic maxime facilis iusto sequi! Earum reprehenderit aspernatur rerum repellat in ab eaque harum numquam?</p>
+                </article>
+        </section>
+        <section id="three" class="main-section">
+            <header>three</header>
+            <article>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil tenetur illo nisi quibusdam necessitatibus eum dolor exercitationem quae inventore magni laboriosam voluptatibus beatae sint sed atque praesentium, et ea voluptate?</p>
+                    <div id="code-container"><code>Lorem ipsum dolor sit amet consectetur adipisicing elit.</code></div>          
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus aperiam, ea quidem illo quisquam adipisci cumque eaque vero, esse, commodi obcaecati cum omnis earum nam molestias assumenda dicta modi. Sed.Dicta voluptatem maiores natus, voluptate perferendis tempora quae? Quo recusandae nihil esse excepturi reiciendis, consequatur totam obcaecati eos nulla veniam iure consequuntur quisquam corrupti, tenetur dolorem aliquid maiores ipsa dolores!</p>
+                </article>
+        </section>
+        <section id="four" class="main-section">
+            <header>four</header>
+            <article>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eos dignissimos quas provident, illum voluptates ipsum laboriosam dicta, assumenda, consequatur fugiat exercitationem eligendi numquam natus vitae cum beatae pariatur deserunt?Repudiandae dicta magnam neque excepturi adipisci voluptate molestias culpa nisi! Autem, eligendi sit nesciunt voluptatum molestiae unde illum tempore non aut, soluta nihil aspernatur eum vitae eveniet facilis nemo ipsam!</p>
+                    <div id="code-container"><code>Lorem ipsum dolor sit amet consectetur adipisicing elit.</code></div>          
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta nulla doloribus architecto sint magnam voluptatum aperiam distinctio ut modi. Totam recusandae, explicabo ex modi quis distinctio optio non voluptatibus.
+                    Odit ut similique sapiente quod alias cumque nisi perferendis iste dicta consequatur est explicabo saepe expedita molestias necessitatibus, molestiae neque in ducimus officia eos dolore! Veritatis blanditiis iusto eum quasi?
+                    Autem, ad ut. A, ut vel similique consequatur cumque odit labore nostrum nihil enim laborum repudiandae iste eveniet saepe, impedit quod assumenda eaque totam dolorem et. Quod asperiores sequi quidem?</p>
+                </article>
+        </section>
+</body>
+</html>
